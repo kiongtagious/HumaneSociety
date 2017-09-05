@@ -1,1 +1,30 @@
-﻿
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="HumaneSociety">
+  <DataContextMoniker Name="/HumaneSocietyDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f46dc9e8-a1da-4316-815f-e0335d75c4f6" absoluteBounds="2.75, 0.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/HumaneSocietyDataContext/Adopter" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a5a9f214-1419-43ec-8b1f-66451e730086" absoluteBounds="2.765, 1.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c43dda4a-f509-4f7f-ac23-fe0eaba018d1" absoluteBounds="7.375, 0.625, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/HumaneSocietyDataContext/Cat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="905b224b-17bb-47b9-9029-53dcd643bee4" absoluteBounds="7.39, 1.085, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1a7ab1f0-d51f-4997-b84b-2db49143021a" absoluteBounds="5.125, 0.625, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/HumaneSocietyDataContext/Dog" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cafba0b5-fd75-4489-8f5b-1c2cd88b4680" absoluteBounds="5.14, 1.085, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="68eb08e5-89c0-4831-947b-42f71d84b208" absoluteBounds="0.5, 0.625, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/HumaneSocietyDataContext/Employee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4838a491-2141-4282-aa58-23d37a31a33f" absoluteBounds="0.51499999999999968, 1.085, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

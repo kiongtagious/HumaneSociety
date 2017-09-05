@@ -12,7 +12,7 @@ namespace HumaneSociety
         {
             //("Data Source=DESKTOP-RG5MV00;Initial Catalog=HumaneSociety;Integrated Security=True");
           
-            Console.WriteLine("Welcome to The Humane Society");
+        
 
         
     }

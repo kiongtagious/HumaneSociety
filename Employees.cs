@@ -12,10 +12,6 @@ namespace HumaneSociety
         {
 
         }
-        public void UserInput()
-        {
-            Console.WriteLine("Welcome to The Humane Society");
-
-        }
+     
     }
 }
