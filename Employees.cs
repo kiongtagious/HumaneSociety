@@ -6,18 +6,16 @@ using System.Threading.Tasks;
 
 namespace HumaneSociety
 {
-    class Program
+    class Employees
     {
-        static void Main(string[] args)
+        public Employees()
         {
-            //("Data Source=DESKTOP-RG5MV00;Initial Catalog=HumaneSociety;Integrated Security=True");
-          
+
+        }
+        public void UserInput()
+        {
             Console.WriteLine("Welcome to The Humane Society");
 
-        
-    }
+        }
     }
 }
-
-
-

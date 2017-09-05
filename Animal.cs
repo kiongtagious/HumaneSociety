@@ -6,18 +6,7 @@ using System.Threading.Tasks;
 
 namespace HumaneSociety
 {
-    public class Animal
+    class Animal
     {
-        string newAnimal;
-        
-        public Animal()
-        {
-
-        }
-        public void AddAnimal()
-        {
-            List<Dog> name = new List<Dog>();
-            string [] newname = new string[] {""}
-        }
     }
 }
