@@ -8,8 +8,6 @@ namespace HumaneSociety
 {
     class Employees
     {
-        Dog dog = new Dog();
-        Cat cat = new Cat();
       
         public static bool AddDog(Dog dog)
         {
@@ -39,7 +37,7 @@ namespace HumaneSociety
                 return false;
             }
         }
-        public void DogAdoptStatus()
+        public void DogAdoptStatus(Dog dog)
         {
             if (dog == Adopted)
             {
@@ -48,7 +46,7 @@ namespace HumaneSociety
                 context.SubmitChanges();
             }
         }
-        public void CatAdoptStatus()
+        public void CatAdoptStatus(Cat cat)
         {
             if (cat = Adopted)
             {
