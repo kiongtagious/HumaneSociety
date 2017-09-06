@@ -10,12 +10,8 @@ namespace HumaneSociety
     {
         static void Main(string[] args)
         {
-            //("Data Source=DESKTOP-RG5MV00;Initial Catalog=HumaneSociety;Integrated Security=True");
-          
-        
-
-        
-    }
+              
+        }
     }
 }
 

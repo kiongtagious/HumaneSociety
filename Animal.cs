@@ -50,7 +50,7 @@ namespace HumaneSociety
         }
         public void CatAdoptStatus()
         {
-            if (dog.adoptStatus == "Adopted")
+            if (cat.adoptStatus == "Adopted")
             {
                 DataClasses1DataContext context = new DataClasses1DataContext();
                 context.Animals.InsertOnSubmit(cat);
