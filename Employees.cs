@@ -81,5 +81,38 @@ namespace HumaneSociety
                 }
             }
         }
+        public void DogShotStatus(Dog dog)
+        {           
+            DataClasses1DataContext context = new DataClasses1DataContext();
+            
+            if (dog.ShotStatus == true)
+            {
+                Console.WriteLine("Shots are up to-date!");
+            }
+            else if (dog.ShotStatus == false)
+            {
+                Console.WriteLine("Shots are not up to-date!");
+            }
+        }
+        public void CatShotStatus(Cat cat)
+        {
+            DataClasses1DataContext context = new DataClasses1DataContext();
+
+            if (cat.ShotStatus == true)
+            {
+                Console.WriteLine("Shots are up to-date!");
+            }
+            else if (cat.ShotStatus == false)
+            {
+                Console.WriteLine("Shots are not up to-date!");
+            }
+        }
+
+
+
+
+
+
+
     }
 }
