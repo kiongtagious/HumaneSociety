@@ -8,14 +8,6 @@ namespace HumaneSociety
 {
     class UserInterface
     {
-        public UserInterface()
-        {
-
-        }
-        public void UserInput()
-        {
-            Console.WriteLine("Welcome to The Humane Society");
-
-        }
+    
     }
 }

@@ -123,8 +123,6 @@ namespace HumaneSociety
             number = int.Parse(Console.ReadLine());
             num = Convert.ToInt32(Console.ReadLine());
             return num;
-
-
         }
 
 
