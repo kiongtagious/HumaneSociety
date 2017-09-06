@@ -14,14 +14,14 @@ namespace HumaneSociety
         }
         public static List<Adopter> AdopterProfile()
         {
-            DataClasses1DataContext context = new DataClasses1DataContext();
-            var result = from r in context.Adopter select r;
+            HumaneSocietyDataContext context = new HumaneSocietyDataContext();
+            var result = from r in context.Adopters select r;
             return result.ToList();
         }
         public Dog SearchForDog(string dog)
         {
-            DataClasses1DataContext context = new DataClasses1DataContext();
-            Dog dogResult = (from r in context.dog
+            HumaneSocietyDataContext context = new HumaneSocietyDataContext();
+            Dog dogResult = (from r in context.Dogs
                                           where r.dog == dog
                                           select r).First();
             return dogResult;
