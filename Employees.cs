@@ -13,8 +13,8 @@ namespace HumaneSociety
         {
             try
             {
-                DataClasses1DataContext context = new DataClasses1DataContext();
-                context.Animals.InsertOnSubmit(dog);
+                HumaneSocietyDataContext context = new HumaneSocietyDataContext();
+                context.Dogs.InsertOnSubmit(dog);
                 context.SubmitChanges();
                 return true;
             }
@@ -27,8 +27,8 @@ namespace HumaneSociety
         {
             try
             {
-                DataClasses1DataContext context = new DataClasses1DataContext();
-                context.Animals.InsertOnSubmit(cat);
+                HumaneSocietyDataContext context = new HumaneSocietyDataContext();
+                context.Cats.InsertOnSubmit(cat);
                 context.SubmitChanges();
                 return true;
             }
@@ -42,8 +42,8 @@ namespace HumaneSociety
 
             if (animal == "Adopted")
             {
-                DataClasses1DataContext context = new DataClasses1DataContext();
-                context.Animals.InsertOnSubmit(dog);
+                HumaneSocietyDataContext context = new HumaneSocietyDataContext();
+                context.Dogs.InsertOnSubmit(dog);
                 context.SubmitChanges();
             }
         }
@@ -51,38 +51,38 @@ namespace HumaneSociety
         {
             if (animal == "Adopted")
             {
-                DataClasses1DataContext context = new DataClasses1DataContext();
-                context.Animals.InsertOnSubmit(cat);
+                HumaneSocietyDataContext context = new HumaneSocietyDataContext();
+                context.Cats.InsertOnSubmit(cat);
                 context.SubmitChanges();
             }
         }
         public void DogFoodTracker(Dog dog)
         {
-            DataClasses1DataContext context = new DataClasses1DataContext();
-            foreach (var search in context.Dog)
+            HumaneSocietyDataContext context = new HumaneSocietyDataContext();
+            foreach (var search in context.Dogs)
             {
-               if (search.Food == dog)
+               if (search.AmountOfFoodNeeded == "dog")
                 {
-                    Console.WriteLine("FoodType: ");
+                    Console.WriteLine("AmountOfFoodNeeded: ");
                     Console.ReadLine();
                 }
             }
         }
         public void CatFoodTracker(Cat cat)
         {
-            DataClasses1DataContext context = new DataClasses1DataContext();
-            foreach (var search in context.Cat)
+            HumaneSocietyDataContext context = new HumaneSocietyDataContext();
+            foreach (var search in context.Cats)
             {
-                if (search.Food == cat)
+                if (search.AmountOfFoodNeeded == "cat")
                 {
-                    Console.WriteLine("FoodType: ");
+                    Console.WriteLine("AmountOfFoodNeeded: ");
                     Console.ReadLine();
                 }
             }
         }
         public void DogShotStatus(Dog dog)
-        {           
-            DataClasses1DataContext context = new DataClasses1DataContext();
+        {
+            HumaneSocietyDataContext context = new HumaneSocietyDataContext();
             
             if (dog.ShotStatus == true)
             {
@@ -99,7 +99,7 @@ namespace HumaneSociety
         }
         public void CatShotStatus(Cat cat)
         {
-            DataClasses1DataContext context = new DataClasses1DataContext();
+            HumaneSocietyDataContext context = new HumaneSocietyDataContext();
 
             if (cat.ShotStatus == true)
             {
