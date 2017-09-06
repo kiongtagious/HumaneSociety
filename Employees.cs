@@ -8,7 +8,8 @@ namespace HumaneSociety
 {
     class Employees
     {
-      
+        string animal = "newAnimal";
+
         public static bool AddDog(Dog dog)
         {
             try
@@ -39,7 +40,8 @@ namespace HumaneSociety
         }
         public void DogAdoptStatus(Dog dog)
         {
-            if (dog == Adopted)
+
+            if (animal == "Adopted")
             {
                 DataClasses1DataContext context = new DataClasses1DataContext();
                 context.Animals.InsertOnSubmit(dog);
@@ -48,16 +50,36 @@ namespace HumaneSociety
         }
         public void CatAdoptStatus(Cat cat)
         {
-            if (cat = Adopted)
+            if (animal == "Adopted")
             {
                 DataClasses1DataContext context = new DataClasses1DataContext();
                 context.Animals.InsertOnSubmit(cat);
                 context.SubmitChanges();
             }
         }
-        public void SearchForDog()
+        public void DogFoodTracker(Dog dog)
         {
-
+            DataClasses1DataContext context = new DataClasses1DataContext();
+            foreach (var search in context.Dog)
+            {
+               if (search.Food == dog)
+                {
+                    Console.WriteLine("FoodType: ");
+                    Console.ReadLine();
+                }
+            }
+        }
+        public void CatFoodTracker(Cat cat)
+        {
+            DataClasses1DataContext context = new DataClasses1DataContext();
+            foreach (var search in context.Cat)
+            {
+                if (search.Food == cat)
+                {
+                    Console.WriteLine("FoodType: ");
+                    Console.ReadLine();
+                }
+            }
         }
     }
 }
