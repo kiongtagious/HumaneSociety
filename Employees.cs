@@ -9,7 +9,6 @@ namespace HumaneSociety
     class Employees
     {
         string animal = "newAnimal";
-
         public static bool AddDog(Dog dog)
         {
             try
@@ -93,6 +92,10 @@ namespace HumaneSociety
             {
                 Console.WriteLine("Shots are not up to-date!");
             }
+            else
+            {
+
+            }
         }
         public void CatShotStatus(Cat cat)
         {
@@ -106,6 +109,22 @@ namespace HumaneSociety
             {
                 Console.WriteLine("Shots are not up to-date!");
             }
+            else
+            {
+
+            }
+        }
+        public int CollectMoney()
+        {
+            int number = 0;
+            int num;
+
+            Console.WriteLine("The adoption fee for a dog is $200 and for a cat it is $100.");          
+            number = int.Parse(Console.ReadLine());
+            num = Convert.ToInt32(Console.ReadLine());
+            return num;
+
+
         }
 
 
